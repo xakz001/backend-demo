@@ -2,6 +2,9 @@
 FROM eclipse-temurin:17-jdk AS builder
 WORKDIR /app
 
+# Install SSL certificates so Gradle can download dependencies
+RUN apt-get update && apt-get install -y ca-certificates && update-ca-certificates
+
 # copy gradle wrapper and config
 COPY gradlew .
 COPY gradle gradle
