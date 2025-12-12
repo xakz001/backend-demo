@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend-demo
+  template:
+    metadata:
+      labels:
+        app: backend-demo
+    spec:
+      containers:
+        - name: backend-demo
+          image: aurait/backend-demo:latest
+          ports:
+            - containerPort: 8080
