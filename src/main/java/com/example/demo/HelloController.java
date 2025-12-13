@@ -8,7 +8,7 @@ public class HelloController {
 
     @GetMapping("/api/hello")
     public String hello() {
-            return "Hello from Java Backend v236!";
+            return "Hello from Java Backend v2361!";
 
     }
 }
