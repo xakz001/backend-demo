@@ -14,7 +14,7 @@ public class ApiController {
     @GetMapping("/api/time")
     public Map<String, String> getTime() {
         Map<String, String> response = new HashMap<>();
-        response.put("message", "Hello from backend");
+        response.put("message", "Hello from backendф");
         response.put(
                 "time",
                 LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"))
