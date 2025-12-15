@@ -27,6 +27,6 @@ jobs:
 
       - name: Deploy to Kubernetes
         run: |
-          kubectl set image deployment/backend-demo \
-            backend=aurait/backend-demo:latest
-          kubectl rollout status deployment/backend-demo
+        kubectl set image deployment/backend-demo \
+        backend-demo=aurait/backend-demo:latest
+        kubectl rollout status deployment/backend-demo
