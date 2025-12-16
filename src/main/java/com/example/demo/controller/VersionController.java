@@ -13,7 +13,7 @@ public class VersionController {
     public Map<String, String> version() {
         return Map.of(
                 "service", "backend-demo",
-                "version", "2.0.0",
+                "version", "3.0.0",
                 "buildTime", Instant.now().toString()
         );
     }
